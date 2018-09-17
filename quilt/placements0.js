@@ -13,7 +13,6 @@ function placements(hotrod, diskSizes) {
         hotrod.driver[1].placeOn({diskSize: diskSizes[0]});
         hotrod.customer[2].placeOn({diskSize: diskSizes[0]});
 
-        hotrod.driver[3].placeOn({diskSize: diskSizes[1]});
         hotrod.customer[3].placeOn({diskSize: diskSizes[1]});
         hotrod.customer[4].placeOn({diskSize: diskSizes[1]});
         hotrod.frontend.placeOn({diskSize: diskSizes[1]});
