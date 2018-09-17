@@ -82,9 +82,6 @@ function hotrod() {
            allow(c, publicInternet, 80);
            allow(c, publicInternet, 443);
            allow(c, publicInternet, 53);
-           allow(publicInternet, c, 80);
-           allow(publicInternet, c, 443);
-           allow(publicInternet, c, 53);
        });
    }
 
