@@ -3,7 +3,7 @@ const assert = require('assert');
 function placements(hotrod, diskSizes) {
     
     this.three_per = function three_per() { 
-        assert(diskSizes.length == );
+        assert(diskSizes.length == 4);
 
         hotrod.mapper[0].placeOn({diskSize: diskSizes[0]});
         hotrod.mapper[1].placeOn({diskSize: diskSizes[0]});
