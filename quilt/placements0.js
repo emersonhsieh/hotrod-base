@@ -3,7 +3,7 @@ const assert = require('assert');
 function placements(hotrod, diskSizes) {
     
     this.three_per = function three_per() { 
-        assert(diskSizes.length == 4);
+        assert(diskSizes.length == );
 
         hotrod.mapper[0].placeOn({diskSize: diskSizes[0]});
         hotrod.mapper[1].placeOn({diskSize: diskSizes[0]});
@@ -11,10 +11,11 @@ function placements(hotrod, diskSizes) {
         hotrod.ingress.placeOn({diskSize: diskSizes[0]});
         hotrod.driver[0].placeOn({diskSize: diskSizes[0]});
         hotrod.driver[1].placeOn({diskSize: diskSizes[0]});
-        hotrod.customer[2].placeOn({diskSize: diskSizes[0]});
+        hotrod.customer[0].placeOn({diskSize: diskSizes[0]});
 
-        hotrod.customer[3].placeOn({diskSize: diskSizes[1]});
-        hotrod.customer[4].placeOn({diskSize: diskSizes[1]});
+        hotrod.driver[2].placeOn({diskSize: diskSizes[1]});
+        hotrod.customer[1].placeOn({diskSize: diskSizes[1]});
+        hotrod.customer[2].placeOn({diskSize: diskSizes[1]});
         hotrod.frontend.placeOn({diskSize: diskSizes[1]});
         hotrod.api_haproxy.placeOn({diskSize: diskSizes[1]});
         hotrod.map_haproxy.placeOn({diskSize: diskSizes[1]});
