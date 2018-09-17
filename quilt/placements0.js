@@ -21,13 +21,13 @@ function placements(hotrod, diskSizes) {
         hotrod.map_haproxy.placeOn({diskSize: diskSizes[1]});
         hotrod.api[0].placeOn({diskSize: diskSizes[1]});
 
-        hotrod.api[1].placeOn({diskSize: diskSizes[1]});
-        hotrod.route[0].placeOn({diskSize: diskSizes[1]});
-        hotrod.route[1].placeOn({diskSize: diskSizes[1]});
-        hotrod.postgres.placeOn({diskSize: diskSizes[1]});
+        hotrod.api[1].placeOn({diskSize: diskSizes[2]});
+        hotrod.route[0].placeOn({diskSize: diskSizes[2]});
+        hotrod.route[1].placeOn({diskSize: diskSizes[2]});
+        hotrod.postgres.placeOn({diskSize: diskSizes[2]});
 
-        hotrod.redis.placeOn({diskSize: diskSizes[2]});
-        hotrod.route[2].placeOn({diskSize: diskSizes[2]});
+        hotrod.redis.placeOn({diskSize: diskSizes[3]});
+        hotrod.route[2].placeOn({diskSize: diskSizes[3]});
 
     } 
 }
