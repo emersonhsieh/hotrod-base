@@ -3,31 +3,31 @@ const assert = require('assert');
 function placements(hotrod, diskSizes) {
     
     this.three_per = function three_per() { 
-        assert(diskSizes.length == diskSizes);
+        assert(diskSizes.length == 4);
 
-        hotrod.mapper[i].placeOn({diskSize: diskSizes[0]});
-        hotrod.mapper[i].placeOn({diskSize: diskSizes[0]});
-        hotrod.mapper[i].placeOn({diskSize: diskSizes[0]});
+        hotrod.mapper[0].placeOn({diskSize: diskSizes[0]});
+        hotrod.mapper[1].placeOn({diskSize: diskSizes[0]});
+        hotrod.mapper[2].placeOn({diskSize: diskSizes[0]});
         hotrod.ingress.placeOn({diskSize: diskSizes[0]});
-        hotrod.driver[i].placeOn({diskSize: diskSizes[0]});
-        hotrod.driver[i].placeOn({diskSize: diskSizes[0]});
-        hotrod.customer[i].placeOn({diskSize: diskSizes[0]});
+        hotrod.driver[0].placeOn({diskSize: diskSizes[0]});
+        hotrod.driver[1].placeOn({diskSize: diskSizes[0]});
+        hotrod.customer[2].placeOn({diskSize: diskSizes[0]});
 
-        hotrod.driver[i].placeOn({diskSize: diskSizes[1]});
-        hotrod.customer[i].placeOn({diskSize: diskSizes[1]});
-        hotrod.customer[i].placeOn({diskSize: diskSizes[1]});
+        hotrod.driver[3].placeOn({diskSize: diskSizes[1]});
+        hotrod.customer[3].placeOn({diskSize: diskSizes[1]});
+        hotrod.customer[4].placeOn({diskSize: diskSizes[1]});
         hotrod.frontend.placeOn({diskSize: diskSizes[1]});
         hotrod.api_haproxy.placeOn({diskSize: diskSizes[1]});
         hotrod.map_haproxy.placeOn({diskSize: diskSizes[1]});
-        hotrod.api[i].placeOn({diskSize: diskSizes[1]});
+        hotrod.api[0].placeOn({diskSize: diskSizes[1]});
 
-        hotrod.api[i].placeOn({diskSize: diskSizes[1]});
-        hotrod.route[i].placeOn({diskSize: diskSizes[1]});
-        hotrod.route[i].placeOn({diskSize: diskSizes[1]});
+        hotrod.api[1].placeOn({diskSize: diskSizes[1]});
+        hotrod.route[0].placeOn({diskSize: diskSizes[1]});
+        hotrod.route[1].placeOn({diskSize: diskSizes[1]});
         hotrod.postgres.placeOn({diskSize: diskSizes[1]});
 
         hotrod.redis.placeOn({diskSize: diskSizes[2]});
-        hotrod.route[i].placeOn({diskSize: diskSizes[2]});
+        hotrod.route[2].placeOn({diskSize: diskSizes[2]});
 
     } 
 }
