@@ -7,7 +7,7 @@ const placement = require('./placements3');
 const namespace = "hotrod-app-emerson-0003"
 const deployment = quilt.createDeployment({namespace: namespace, adminACL: ['0.0.0.0/0']});
 
-var machines = new machineFactory(5);
+var machines = new machineFactory(4);
 // var machines = new machineFactory(21);
 
 hotrodApp = new hotrod();
