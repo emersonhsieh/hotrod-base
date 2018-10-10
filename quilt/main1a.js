@@ -4,7 +4,7 @@ const hotrod = require('./hotrod');
 const placement = require('./placements1a');
 
 // const namespace = "hotrod-app-" + Math.floor(Math.random() * 10000).toString();
-const namespace = "hotrod-app-emerson-00010"
+const namespace = "hotrod-app-emerson-000a"
 const deployment = quilt.createDeployment({namespace: namespace, adminACL: ['0.0.0.0/0']});
 
 var machines = new machineFactory(5);
