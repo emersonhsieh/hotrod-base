@@ -37,17 +37,17 @@ function placements(hotrod, diskSizes) {
         // 46.0
         hotrod.mapper[1].placeOn({diskSize: diskSizes[3]});
         // 46.0
-        hotrod.api_haproxy.placeOn({diskSize: diskSizes[1]});
+        hotrod.api_haproxy.placeOn({diskSize: diskSizes[3]});
         // 5.488
-        hotrod.map_haproxy.placeOn({diskSize: diskSizes[1]});
+        hotrod.map_haproxy.placeOn({diskSize: diskSizes[3]});
         // 5.488
         hotrod.ingress.placeOn({diskSize: diskSizes[3]});
         // 23.0
-        hotrod.mapper[2].placeOn({diskSize: diskSizes[4]});
+        hotrod.mapper[2].placeOn({diskSize: diskSizes[3]});
         // 46.0
         // 152
 
-        hotrod.driver[0].placeOn({diskSize: diskSizes[3]});
+        hotrod.driver[0].placeOn({diskSize: diskSizes[4]});
         // 34.3
         hotrod.redis.placeOn({diskSize: diskSizes[4]});
         // 34.0
