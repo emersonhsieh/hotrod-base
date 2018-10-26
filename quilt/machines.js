@@ -18,7 +18,7 @@ function machines(num_machines) {
 	for (size = this.initial_size; size < this.initial_size + num_machines; size++) { 
 		this.machine_list.push(new quilt.Machine({
     		provider: "Amazon",
-    		size: "m4.large",
+    		size: "m4.xlarge",
     		region: "us-west-1",
     		sshKeys: this.key,
     		diskSize: size,
