@@ -1,7 +1,7 @@
 const quilt = require('@quilt/quilt');
 const machineFactory = require('./machines');
 const hotrod = require('./hotrod');
-const placement = require('./placementsg');
+const placement = require('./placementsh');
 
 // const namespace = "hotrod-app-" + Math.floor(Math.random() * 10000).toString();
 const namespace = "hotrod-app-emerson-000f"

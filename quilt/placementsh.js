@@ -11,7 +11,7 @@ function placements(hotrod, diskSizes) {
         // 46.0
         hotrod.mapper[2].placeOn({diskSize: diskSizes[0]});
         // 46.0
-        hotrod.ingress.placeOn({diskSize: diskSizes[5]});
+        hotrod.ingress.placeOn({diskSize: diskSizes[0]});
         // 126
         
         hotrod.driver[0].placeOn({diskSize: diskSizes[1]});
